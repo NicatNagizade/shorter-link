@@ -36,7 +36,7 @@
 </template>
 
 <script>
-const shortLinkUrl = "http://localhost:8000/shortLink";
+const shortLinkUrl = process.env.MIX_API_SHORT_URL;
 export default {
   data() {
     return {
