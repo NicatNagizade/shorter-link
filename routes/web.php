@@ -17,6 +17,4 @@ Route::get('/', function () {
     return view('shorter_link');
 });
 
-Route::prefix('shortLink')->group(function() {
-    Route::get('{key}', 'ShortLinkController@redirectToLink');
-});
+Route::get('{key}', 'ShortLinkController@redirectToLink');
